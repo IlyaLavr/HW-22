@@ -14,6 +14,12 @@
 		09394FA02938C25B000FECD2 /* HW_22.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09394F9E2938C25B000FECD2 /* HW_22.xcdatamodeld */; };
 		09394FA22938C262000FECD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09394FA12938C262000FECD2 /* Assets.xcassets */; };
 		09394FA52938C262000FECD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09394FA32938C262000FECD2 /* LaunchScreen.storyboard */; };
+		09394FAD2938C7AE000FECD2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09394FAC2938C7AD000FECD2 /* Model.swift */; };
+		09394FAF2938C7BF000FECD2 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09394FAE2938C7BF000FECD2 /* Presenter.swift */; };
+		09394FB62938C9E9000FECD2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 09394FB52938C9E9000FECD2 /* SnapKit */; };
+		09394FB9293931E1000FECD2 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09394FB7293931E1000FECD2 /* Person+CoreDataClass.swift */; };
+		09394FBA293931E1000FECD2 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09394FB8293931E1000FECD2 /* Person+CoreDataProperties.swift */; };
+		09394FBD29393327000FECD2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09394FBC29393327000FECD2 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,11 @@
 		09394FA12938C262000FECD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09394FA42938C262000FECD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09394FA62938C262000FECD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09394FAC2938C7AD000FECD2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		09394FAE2938C7BF000FECD2 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		09394FB7293931E1000FECD2 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		09394FB8293931E1000FECD2 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		09394FBC29393327000FECD2 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09394FB62938C9E9000FECD2 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +54,8 @@
 		09394F892938C25B000FECD2 = {
 			isa = PBXGroup;
 			children = (
+				09394FB7293931E1000FECD2 /* Person+CoreDataClass.swift */,
+				09394FB8293931E1000FECD2 /* Person+CoreDataProperties.swift */,
 				09394F942938C25B000FECD2 /* HW-22 */,
 				09394F932938C25B000FECD2 /* Products */,
 			);
@@ -58,9 +72,11 @@
 		09394F942938C25B000FECD2 /* HW-22 */ = {
 			isa = PBXGroup;
 			children = (
-				09394F952938C25B000FECD2 /* AppDelegate.swift */,
-				09394F972938C25B000FECD2 /* SceneDelegate.swift */,
-				09394F992938C25B000FECD2 /* ViewController.swift */,
+				09394FBB29393304000FECD2 /* Cell */,
+				09394FB32938C8FE000FECD2 /* Presenter */,
+				09394FB22938C8F7000FECD2 /* View */,
+				09394FB12938C8E8000FECD2 /* App */,
+				09394FB02938C8E0000FECD2 /* Model */,
 				09394F9B2938C25B000FECD2 /* Main.storyboard */,
 				09394FA12938C262000FECD2 /* Assets.xcassets */,
 				09394FA32938C262000FECD2 /* LaunchScreen.storyboard */,
@@ -68,6 +84,47 @@
 				09394F9E2938C25B000FECD2 /* HW_22.xcdatamodeld */,
 			);
 			path = "HW-22";
+			sourceTree = "<group>";
+		};
+		09394FB02938C8E0000FECD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09394FAC2938C7AD000FECD2 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09394FB12938C8E8000FECD2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				09394F952938C25B000FECD2 /* AppDelegate.swift */,
+				09394F972938C25B000FECD2 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		09394FB22938C8F7000FECD2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09394F992938C25B000FECD2 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09394FB32938C8FE000FECD2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				09394FAE2938C7BF000FECD2 /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		09394FBB29393304000FECD2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09394FBC29393327000FECD2 /* TableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +143,9 @@
 			dependencies = (
 			);
 			name = "HW-22";
+			packageProductDependencies = (
+				09394FB52938C9E9000FECD2 /* SnapKit */,
+			);
 			productName = "HW-22";
 			productReference = 09394F922938C25B000FECD2 /* HW-22.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +174,9 @@
 				Base,
 			);
 			mainGroup = 09394F892938C25B000FECD2;
+			packageReferences = (
+				09394FB42938C9E9000FECD2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 09394F932938C25B000FECD2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,7 +204,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09394FAF2938C7BF000FECD2 /* Presenter.swift in Sources */,
+				09394FB9293931E1000FECD2 /* Person+CoreDataClass.swift in Sources */,
+				09394FAD2938C7AE000FECD2 /* Model.swift in Sources */,
+				09394FBD29393327000FECD2 /* TableViewCell.swift in Sources */,
 				09394FA02938C25B000FECD2 /* HW_22.xcdatamodeld in Sources */,
+				09394FBA293931E1000FECD2 /* Person+CoreDataProperties.swift in Sources */,
 				09394F9A2938C25B000FECD2 /* ViewController.swift in Sources */,
 				09394F962938C25B000FECD2 /* AppDelegate.swift in Sources */,
 				09394F982938C25B000FECD2 /* SceneDelegate.swift in Sources */,
@@ -362,6 +430,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		09394FB42938C9E9000FECD2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		09394FB52938C9E9000FECD2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09394FB42938C9E9000FECD2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		09394F9E2938C25B000FECD2 /* HW_22.xcdatamodeld */ = {
